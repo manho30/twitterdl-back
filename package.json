@@ -2,7 +2,7 @@
   "name": "proxy.twitterdl.manho30.me",
   "version": "1.0.0",
   "description": "An API endpoint for proxy the Twitter API ",
-  "main": "server.js",
+  "main": "index.js",
   "dependencies": {
     "ajv": "^6.12.6",
     "asn1": "^0.2.6",
@@ -55,7 +55,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
