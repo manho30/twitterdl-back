@@ -10,6 +10,7 @@ const express = require('express')
 
 const bearer = require('./api/bearer')
 const stream = require('./api/stream')
+const home = require('./api/home')
 
 const app = express()
 
@@ -17,6 +18,8 @@ const app = express()
 app.use(express.json({
     extended: false
 }))
+
+app.use('/', home)
 
 app.use('/bearer', bearer)
 app.use('/stream', stream)
